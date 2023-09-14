@@ -1,0 +1,1661 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>ShopOnBudg</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="http://fonts.gooleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.gooleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ 
+    <style type="text/css">
+    
+    body {
+        /* */
+            font-size: 24px;
+            text-align: center;
+            margin: 0px;
+        }
+        /*https://www.numbeo.com/food-prices/country_result.jsp?country=South+Africa*/
+    input {
+            width: 100%;
+            padding: 5px;
+        }
+    .green {
+            color: green;
+        }
+    .red {
+            color: red;
+        }
+    .container{
+            display: flex;
+        }
+    input{
+        width: 150px;
+            height: 30px;
+            margin-left: 20px;
+            border-radius: 8px;
+            align-items: center;
+            
+        }
+    .O{
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Optional: Add gap between divs */
+}
+
+/* Optional: Style for labels and inputs */
+label {
+  font-weight: bold;
+  color: grey;
+}
+.div1{
+    margin-left: 185px;
+}
+.div2{
+    margin-left: 200px;
+}
+.div3{
+    margin-left: 87px;
+}
+.div4{
+    margin-left: 197px;
+}
+.div5{
+    margin-left: 230px;
+}
+.div6{
+    margin-left: 0px;
+}
+.div7{
+    margin-left: 91px;
+}
+.div8{
+    margin-left: 25px;
+}
+.div9{
+    margin-left: 203px;
+}
+.div10{
+    margin-left: 173px;
+}
+.div11{
+    margin-left: 168px;
+}
+.div12{
+    margin-left: 162px;
+}
+.div13{
+    margin-left: 188px;
+}
+.div14{
+    margin-left: 83px;
+}
+.div15{
+    margin-left: 140px;
+}
+.div16{
+    margin-left: 205px;
+}
+.div17{
+    margin-left: 124px;
+}
+.div18{
+    margin-left: 113px;
+}
+.div19{
+    margin-left: 47px;
+}
+.div20{
+    margin-left: 117px;
+}
+.div21{
+    margin-left: 87px;
+}
+.div22{
+    margin-left: 122px;
+}
+.div23{
+    margin-left: -15px;
+}
+.div24{
+    margin-left: -7px;
+}
+.div25{
+    margin-left: 80px;
+}
+.div26{
+    margin-left: 30px;
+}
+.div27{
+    margin-left: -3px;
+}
+.div28{
+    margin-left: -68px;
+}
+.div29{
+    margin-left: 135px;
+}
+.div30{
+    margin-left: 20px;
+}
+.div31{
+    margin-left: 232px;
+}
+.div32{
+    margin-left: 230px;
+}
+.div33{
+    margin-left: 78px;
+}
+.div34{
+    margin-left: -16px;
+}
+.div35{
+    margin-left: -11px;
+}
+.div36{
+    margin-left: 135px;
+}
+.div37{
+    margin-left: 192px;
+}
+.div38{
+    margin-left: -4px;
+}
+.div39{
+    margin-left: -55px;
+}
+.div40{
+    margin-left: 65px;
+}
+.div41{
+    margin-left: 165px;
+}
+.div42{
+    margin-left: -2px;
+}
+.div43{
+    margin-left: 245px;
+}
+.div44{
+    margin-left: 188px;
+}
+.div45{
+    margin-left: 240px;
+}
+.bottom-space{
+            height: 45px;
+        }
+footer{
+        background-color: lightgreen;
+        padding: 0.5em 0;
+        height: 130px;
+        justify-content: center;
+        font-size: 15px;
+        text-align: center;
+        margin: 0px;
+    }
+    header{
+        height: 100px;
+    }
+    .wave {
+            
+            /* Adjust the wave height as needed */
+            background: linear-gradient(90deg, #FF6B6B, #FFE66D, #6BFF6B);}
+
+hr{
+    width: 600px;
+    border-radius: 3px;
+    border-top: 3px solid #000;
+    
+}
+
+
+       
+    </style>
+    </head>
+    <body>
+        <header class="wave">
+
+        </header>
+        <h1>Value Comparison<hr></h1>
+        <label for="valueInput">Enter a Budget:</label>
+        
+        <input type="number" id="valueInput" placeholder="Enter a number">
+        <label id="valueResult"></label>
+
+        <div class="bottom-space"></div>
+        
+<div class="container">
+    <div class="div1">
+        <label class="lable" for="firstInput">Milk 6 pack:</label>
+    <input type="number" id="firstInput" placeholder="Enter a number" value="100">
+    
+    <label for="secondInput"></label>
+    <input type="number" id="secondInput" placeholder="Enter another number">
+    
+    <label class="O" id="result">O</label>
+    </div>
+
+    <div class="div2">
+        <label for="firstInput1">Fish oil 2L:</label>
+    <input type="number" id="firstInput1" placeholder="Enter a number" value="85">
+    
+    <label for="secondInput1"></label>
+    <input type="number" id="secondInput1" placeholder="Enter another number">
+    
+    <label class="O" id="result1">O</label>
+    </div>
+
+    <div class="div3">
+        <label for="firstInput2">Rama 37% fat spread:</label>
+    <input type="number" id="firstInput2" placeholder="Enter a number" value="34">
+    
+    <label for="secondInput2"></label>
+    <input type="number" id="secondInput2" placeholder="Enter another number">
+    
+    <label class="O" id="result2">O</label>
+    </div>
+
+    <div class="div4">
+        <label for="firstInput3">Onion 1Kg:</label>
+    <input type="number" id="firstInput3" placeholder="Enter a number" value="35">
+    
+    <label for="secondInput3"></label>
+    <input type="number" id="secondInput3" placeholder="Enter another number">
+    
+    <label class="O" id="result3">O</label>
+    </div>
+
+    <div class="div5">
+        <label for="firstInput4">Eggs 30:</label>
+    <input type="number" id="firstInput4" placeholder="Enter a number" value="80">
+    
+    <label for="secondInput4"></label>
+    <input type="number" id="secondInput4" placeholder="Enter another number">
+    
+    <label class="O" id="result4">O</label>
+    </div>
+
+    <div class="div6">
+        <label for="firstInput5">Sugar salati golden brown 2kg:</label>
+    <input type="number" id="firstInput5" placeholder="Enter a number" value="55">
+    
+    <label for="secondInput5"></label>
+    <input type="number" id="secondInput5" placeholder="Enter another number">
+    
+    <label class="O" id="result5">O</label>
+    </div>
+
+    <div class="div7">
+        <label for="firstInput6">Rice tastic brown 2kg:</label>
+    <input type="number" id="firstInput6" placeholder="Enter a number" value="50">
+    
+    <label for="secondInput6"></label>
+    <input type="number" id="secondInput6" placeholder="Enter another number">
+    
+    <label class="O" id="result6">O</label>
+    </div>
+
+    <div class="div8">
+        <label for="firstInput7">Maize meal white star 2.5kg:</label>
+    <input type="number" id="firstInput7" placeholder="Enter a number" value="46">
+    
+    <label for="secondInput7"></label>
+    <input type="number" id="secondInput7" placeholder="Enter another number">
+    
+    <label class="O" id="result7">O</label>
+    </div>
+
+    <div class="div9">
+        <label for="firstInput8">Sta soft 2L:</label>
+    <input type="number" id="firstInput8" placeholder="Enter a number" value="80">
+    
+    <label for="secondInput8"></label>
+    <input type="number" id="secondInput8" placeholder="Enter another number">
+    
+    <label class="O" id="result8">O</label>
+    </div>
+
+    <div class="div10">
+        <label for="firstInput9">Green pepper:</label>
+    <input type="number" id="firstInput9" placeholder="Enter a number" value="45">
+    
+    <label for="secondInput9"></label>
+    <input type="number" id="secondInput9" placeholder="Enter another number">
+    
+    <label class="O" id="result9">O</label>
+    </div>
+
+    <div class="div11">
+        <label for="firstInput10">Butternut 3kg:</label>
+    <input type="number" id="firstInput10" placeholder="Enter a number" value="50">
+    
+    <label for="secondInput10"></label>
+    <input type="number" id="secondInput10" placeholder="Enter another number">
+    
+    <label class="O" id="result10">O</label>
+    </div>
+
+    <div class="div12">
+        <label for="firstInput11">Cabbage halve:</label>
+    <input type="number" id="firstInput11" placeholder="Enter a number" value="15">
+    
+    <label for="secondInput11"></label>
+    <input type="number" id="secondInput11" placeholder="Enter another number">
+    
+    <label class="O" id="result11">O</label>
+    </div>
+
+    <div class="div13">
+        <label for="firstInput12">Carrot 750g:</label>
+    <input type="number" id="firstInput12" placeholder="Enter a number" value="12">
+    
+    <label for="secondInput12"></label>
+    <input type="number" id="secondInput12" placeholder="Enter another number">
+    
+    <label class="O" id="result12">O</label>
+    </div>
+
+    <div class="div14">
+        <label for="firstInput13">Koo baked beans 410g:</label>
+    <input type="number" id="firstInput13" placeholder="Enter a number" value="17">
+    
+    <label for="secondInput13"></label>
+    <input type="number" id="secondInput13" placeholder="Enter another number">
+    
+    <label class="O" id="result13">O</label>
+    </div>
+
+    <div class="div15">
+        <label for="firstInput14">Lucky start 400g:</label>
+    <input type="number" id="firstInput14" placeholder="Enter a number" value="27">
+    
+    <label for="secondInput14"></label>
+    <input type="number" id="secondInput14" placeholder="Enter another number">
+    
+    <label class="O" id="result14">O</label>
+    </div>
+
+    <div class="div16">
+        <label for="firstInput15">Potato 3kg:</label>
+    <input type="number" id="firstInput15" placeholder="Enter a number" value="50">
+    
+    <label for="secondInput15"></label>
+    <input type="number" id="secondInput15" placeholder="Enter another number">
+    
+    <label class="O" id="result15">O</label>
+    </div>
+
+    <div class="div17">
+        <label for="firstInput16">ZZ2 Tomatoes 1kg:</label>
+    <input type="number" id="firstInput16" placeholder="Enter a number" value="12">
+    
+    <label for="secondInput16"></label>
+    <input type="number" id="secondInput16" placeholder="Enter another number">
+    
+    <label class="O" id="result16">O</label>
+    </div>
+
+    <div class="div18">
+        <label for="firstInput17">Albany white bread:</label>
+    <input type="number" id="firstInput17" placeholder="Enter a number" value="19">
+    
+    <label for="secondInput17"></label>
+    <input type="number" id="secondInput17" placeholder="Enter another number">
+    
+    <label class="O" id="result17">O</label>
+    </div>
+
+    <div class="div19">
+        <label for="firstInput18">Eskort french polony 750g:</label>
+    <input type="number" id="firstInput18" placeholder="Enter a number" value="40">
+    
+    <label for="secondInput18"></label>
+    <input type="number" id="secondInput18" placeholder="Enter another number">
+    
+    <label class="O" id="result18">O</label>
+    </div>
+
+    <div class="div20">
+        <label for="firstInput19">Frozen chicken 2kg:</label>
+    <input type="number" id="firstInput19" placeholder="Enter a number" value="100">
+    
+    <label for="secondInput19"></label>
+    <input type="number" id="secondInput19" placeholder="Enter another number">
+    
+    <label class="O" id="result19">O</label>
+    </div>
+
+    <div class="div21">
+        <label for="firstInput20">Bokomo weet bix 900g:</label>
+    <input type="number" id="firstInput20" placeholder="Enter a number" value="69">
+    
+    <label for="secondInput20"></label>
+    <input type="number" id="secondInput20" placeholder="Enter another number">
+    
+    <label class="O" id="result20">O</label>
+    </div>
+
+    <div class="div22">
+        <label for="firstInput21">Rooibos teabag 80s:</label>
+    <input type="number" id="firstInput21" placeholder="Enter a number" value="50">
+    
+    <label for="secondInput21"></label>
+    <input type="number" id="secondInput21" placeholder="Enter another number">
+    
+    <label class="O" id="result21">O</label>
+    </div>
+
+    <div class="div23">
+        <label for="firstInput22">Fattis and Monis Macaroni 500g:</label>
+    <input type="number" id="firstInput22" placeholder="Enter a number" value="20">
+    
+    <label for="secondInput22"></label>
+    <input type="number" id="secondInput22" placeholder="Enter another number">
+    
+    <label class="O" id="result22">O</label>
+    </div>
+
+    <div class="div24">
+        <label for="firstInput23">Fattis and Monis spaghetti 500g:</label>
+    <input type="number" id="firstInput23" placeholder="Enter a number" value="20">
+    
+    <label for="secondInput23"></label>
+    <input type="number" id="secondInput23" placeholder="Enter another number">
+    
+    <label class="O" id="result23">O</label>
+    </div>
+
+    <div class="div25">
+        <label for="firstInput24">Instant noodles 5 &#215 70g:</label>
+    <input type="number" id="firstInput24" placeholder="Enter a number" value="38">
+    
+    <label for="secondInput24"></label>
+    <input type="number" id="secondInput24" placeholder="Enter another number">
+    
+    <label class="O" id="result24">O</label>
+    </div>
+
+    <div class="div26">
+        <label for="firstInput25">All gold tomato sauce 350ml:</label>
+    <input type="number" id="firstInput25" placeholder="Enter a number" value="30">
+    
+    <label for="secondInput25"></label>
+    <input type="number" id="secondInput25" placeholder="Enter another number">
+    
+    <label class="O" id="result25">O</label>
+    </div>
+
+    <div class="div27">
+        <label for="firstInput26">Clover classic mayonnaise 750g:</label>
+    <input type="number" id="firstInput26" placeholder="Enter a number" value="43">
+    
+    <label for="secondInput26"></label>
+    <input type="number" id="secondInput26" placeholder="Enter another number">
+    
+    <label class="O" id="result26">O</label>
+    </div>
+
+    <div class="div28">
+        <label for="firstInput27">Knorr brown onion Instant gravy 34g:</label>
+    <input type="number" id="firstInput27" placeholder="Enter a number" value="16">
+    
+    <label for="secondInput27"></label>
+    <input type="number" id="secondInput27" placeholder="Enter another number">
+    
+    <label class="O" id="result27">O</label>
+    </div>
+
+    <div class="div29">
+        <label for="firstInput28">All gold jam 900g:</label>
+    <input type="number" id="firstInput28" placeholder="Enter a number" value="46">
+    
+    <label for="secondInput28"></label>
+    <input type="number" id="secondInput28" placeholder="Enter another number">
+    
+    <label class="O" id="result28">O</label>
+    </div>
+
+    <div class="div30">
+        <label for="firstInput29">Black cat peanut butter 400g:</label>
+    <input type="number" id="firstInput29" placeholder="Enter a number" value="44">
+    
+    <label for="secondInput29"></label>
+    <input type="number" id="secondInput29" placeholder="Enter another number">
+    
+    <label class="O" id="result29">O</label>
+    </div>
+
+    <div class="div31">
+        <label for="firstInput30">Salt 1kg:</label>
+    <input type="number" id="firstInput30" placeholder="Enter a number" value="21">
+    
+    <label for="secondInput30"></label>
+    <input type="number" id="secondInput30" placeholder="Enter another number">
+    
+    <label class="O" id="result30">O</label>
+    </div>
+
+    <div class="div32">
+        <label for="firstInput31">Salt 1kg:</label>
+    <input type="number" id="firstInput31" placeholder="Enter a number" value="21">
+    
+    <label for="secondInput31"></label>
+    <input type="number" id="secondInput31" placeholder="Enter another number">
+    
+    <label class="O" id="result31">O</label>
+    </div>
+
+    <div class="div33">
+        <label for="firstInput32">Six gun grill spice 200g:</label>
+    <input type="number" id="firstInput32" placeholder="Enter a number" value="28">
+    
+    <label for="secondInput32"></label>
+    <input type="number" id="secondInput32" placeholder="Enter another number">
+    
+    <label class="O" id="result32">O</label>
+    </div>
+
+    <div class="div34">
+        <label for="firstInput33">Knorrox beef stock cube 10g 24s:</label>
+    <input type="number" id="firstInput33" placeholder="Enter a number" value="26">
+    
+    <label for="secondInput33"></label>
+    <input type="number" id="secondInput33" placeholder="Enter another number">
+    
+    <label class="O" id="result33">O</label>
+    </div>
+
+    <div class="div35">
+        <label for="firstInput34">Robertsons barbecue spice 128g:</label>
+    <input type="number" id="firstInput34" placeholder="Enter a number" value="31">
+    
+    <label for="secondInput34"></label>
+    <input type="number" id="secondInput34" placeholder="Enter another number">
+    
+    <label class="O" id="result34">O</label>
+    </div>
+
+    <div class="div36">
+        <label for="firstInput35">Black pepper 50g:</label>
+    <input type="number" id="firstInput35" placeholder="Enter a number" value="32">
+    
+    <label for="secondInput35"></label>
+    <input type="number" id="secondInput35" placeholder="Enter another number">
+    
+    <label class="O" id="result35">O</label>
+    </div>
+
+    <div class="div37">
+        <label for="firstInput36">Rajah 100g:</label>
+    <input type="number" id="firstInput36" placeholder="Enter a number" value="30">
+    
+    <label for="secondInput36"></label>
+    <input type="number" id="secondInput36" placeholder="Enter another number">
+    
+    <label class="O" id="result36">O</label>
+    </div>
+
+    <div class="div38">
+        <label for="firstInput37">Knorrox beef flavor soup 400g:</label>
+    <input type="number" id="firstInput37" placeholder="Enter a number" value="23">
+    
+    <label for="secondInput37"></label>
+    <input type="number" id="secondInput37" placeholder="Enter another number">
+    
+    <label class="O" id="result37">O</label>
+    </div>
+
+    <div class="div39">
+        <label for="firstInput38">Sunlight dish Washing liquid 750ml:</label>
+    <input type="number" id="firstInput38" placeholder="Enter a number" value="38">
+    
+    <label for="secondInput38"></label>
+    <input type="number" id="secondInput38" placeholder="Enter another number">
+    
+    <label class="O" id="result38">O</label>
+    </div>
+
+    <div class="div40">
+        <label for="firstInput39">Scotch bright sponges 4:</label>
+    <input type="number" id="firstInput39" placeholder="Enter a number" value="35">
+    
+    <label for="secondInput39"></label>
+    <input type="number" id="secondInput39" placeholder="Enter another number">
+    
+    <label class="O" id="result39">O</label>
+    </div>
+
+    <div class="div41">
+        <label for="firstInput40">Toilet paper 9:</label>
+    <input type="number" id="firstInput40" placeholder="Enter a number" value="60">
+    
+    <label for="secondInput40"></label>
+    <input type="number" id="secondInput40" placeholder="Enter another number">
+    
+    <label class="O" id="result40">O</label>
+    </div>
+
+    <div class="div42">
+        <label for="firstInput41">Sunlight Washing powder 2kg:</label>
+    <input type="number" id="firstInput41" placeholder="Enter a number" value="69">
+    
+    <label for="secondInput41"></label>
+    <input type="number" id="secondInput41" placeholder="Enter another number">
+    
+    <label class="O" id="result41">O</label>
+    </div>
+
+    <div class="div43">
+        <label for="firstInput42">Doom:</label>
+    <input type="number" id="firstInput42" placeholder="Enter a number" value="44">
+    
+    <label for="secondInput42"></label>
+    <input type="number" id="secondInput42" placeholder="Enter another number">
+    
+    <label class="O" id="result42">O</label>
+    </div>
+
+    <div class="div44">
+        <label for="firstInput43">Protex soap:</label>
+    <input type="number" id="firstInput43" placeholder="Enter a number" value="21">
+    
+    <label for="secondInput43"></label>
+    <input type="number" id="secondInput43" placeholder="Enter another number">
+    
+    <label class="O" id="result43">O</label>
+    </div>
+
+    <div class="div45">
+        <label for="firstInput44">Rollon:</label>
+    <input type="number" id="firstInput44" placeholder="Enter a number" value="20">
+    
+    <label for="secondInput44"></label>
+    <input type="number" id="secondInput44" placeholder="Enter another number">
+    
+    <label class="O" id="result44">O</label>
+    </div>
+
+   
+
+    <div>
+        <label for="sumTextView">Sum of First Values:</label>
+        <span id="sumTextView">0</span>
+    </div>
+    <div>
+        <label for="sumSecondInputTextView">Sum of Second Values:</label>
+        <span id="sumSecondInputTextView">0</span>
+    </div>
+</div>
+
+    <script>
+        const firstInput = document.getElementById("firstInput");
+        const secondInput = document.getElementById("secondInput");
+
+        const firstInput1 = document.getElementById("firstInput1");
+        const secondInput1 = document.getElementById("secondInput1");
+
+        const firstInput2 = document.getElementById("firstInput2");
+        const secondInput2 = document.getElementById("secondInput2");
+
+        const firstInput3 = document.getElementById("firstInput3");
+        const secondInput3 = document.getElementById("secondInput3");
+
+        const firstInput4 = document.getElementById("firstInput4");
+        const secondInput4 = document.getElementById("secondInput4");
+
+        const firstInput5 = document.getElementById("firstInput5");
+        const secondInput5 = document.getElementById("secondInput5");
+
+        const firstInput6 = document.getElementById("firstInput6");
+        const secondInput6 = document.getElementById("secondInput6");
+
+        const firstInput7 = document.getElementById("firstInput7");
+        const secondInput7 = document.getElementById("secondInput7");
+
+        const firstInput8 = document.getElementById("firstInput8");
+        const secondInput8 = document.getElementById("secondInput8");
+
+        const firstInput9 = document.getElementById("firstInput9");
+        const secondInput9 = document.getElementById("secondInput9");
+
+        const firstInput10 = document.getElementById("firstInput10");
+        const secondInput10 = document.getElementById("secondInput10");
+
+        const firstInput11 = document.getElementById("firstInput11");
+        const secondInput11 = document.getElementById("secondInput11");
+
+        const firstInput12 = document.getElementById("firstInput12");
+        const secondInput12 = document.getElementById("secondInput12");
+
+        const firstInput13 = document.getElementById("firstInput13");
+        const secondInput13 = document.getElementById("secondInput13");
+
+        const firstInput14 = document.getElementById("firstInput14");
+        const secondInput14 = document.getElementById("secondInput14");
+
+        const firstInput15 = document.getElementById("firstInput15");
+        const secondInput15 = document.getElementById("secondInput15");
+
+        const firstInput16 = document.getElementById("firstInput16");
+        const secondInput16 = document.getElementById("secondInput16");
+
+        const firstInput17 = document.getElementById("firstInput17");
+        const secondInput17 = document.getElementById("secondInput17");
+
+        const firstInput18 = document.getElementById("firstInput18");
+        const secondInput18 = document.getElementById("secondInput18");
+
+        const firstInput19 = document.getElementById("firstInput19");
+        const secondInput19 = document.getElementById("secondInput19");
+
+        const valueInput = document.getElementById("valueInput");
+        const valueResult = document.getElementById("valueResult");
+
+        const firstInput20 = document.getElementById("firstInput20");
+        const secondInput20 = document.getElementById("secondInput20");
+
+        const firstInput21 = document.getElementById("firstInput21");
+        const secondInput21 = document.getElementById("secondInput21");
+
+        const firstInput22 = document.getElementById("firstInput22");
+        const secondInput22 = document.getElementById("secondInput22");
+
+        const firstInput23 = document.getElementById("firstInput23");
+        const secondInput23 = document.getElementById("secondInput23");
+
+        const firstInput24 = document.getElementById("firstInput24");
+        const secondInput24 = document.getElementById("secondInput24");
+
+        const firstInput25 = document.getElementById("firstInput25");
+        const secondInput25 = document.getElementById("secondInput25");
+
+        const firstInput26 = document.getElementById("firstInput26");
+        const secondInput26 = document.getElementById("secondInput26");
+
+        const firstInput27 = document.getElementById("firstInput27");
+        const secondInput27 = document.getElementById("secondInput27");
+
+        const firstInput28 = document.getElementById("firstInput28");
+        const secondInput28 = document.getElementById("secondInput28");
+
+        const firstInput29 = document.getElementById("firstInput29");
+        const secondInput29 = document.getElementById("secondInput29");
+
+        const firstInput30 = document.getElementById("firstInput30");
+        const secondInput30 = document.getElementById("secondInput30");
+
+        const firstInput31 = document.getElementById("firstInput31");
+        const secondInput31 = document.getElementById("secondInput31");
+
+        const firstInput32 = document.getElementById("firstInput32");
+        const secondInput32 = document.getElementById("secondInput32");
+
+        const firstInput33 = document.getElementById("firstInput33");
+        const secondInput33 = document.getElementById("secondInput33");
+
+        const firstInput34 = document.getElementById("firstInput34");
+        const secondInput34 = document.getElementById("secondInput34");
+
+        const firstInput35 = document.getElementById("firstInput35");
+        const secondInput35= document.getElementById("secondInput35");
+
+        const firstInput36 = document.getElementById("firstInput36");
+        const secondInput36 = document.getElementById("secondInput36");
+
+        const firstInput37 = document.getElementById("firstInput37");
+        const secondInput37 = document.getElementById("secondInput37");
+
+        const firstInput38 = document.getElementById("firstInput38");
+        const secondInput38 = document.getElementById("secondInput38");
+
+        const firstInput39 = document.getElementById("firstInput39");
+        const secondInput39 = document.getElementById("secondInput39");
+
+        const firstInput40 = document.getElementById("firstInput40");
+        const secondInput40 = document.getElementById("secondInput40");
+
+        const firstInput41 = document.getElementById("firstInput41");
+        const secondInput41 = document.getElementById("secondInput41");
+
+        const firstInput42 = document.getElementById("firstInput42");
+        const secondInput42 = document.getElementById("secondInput42");
+
+        const firstInput43 = document.getElementById("firstInput43");
+        const secondInput43 = document.getElementById("secondInput43");
+
+        const firstInput44 = document.getElementById("firstInput44");
+        const secondInput44 = document.getElementById("secondInput44");
+
+        const firstInput45 = document.getElementById("firstInput45");
+        const secondInput45 = document.getElementById("secondInput45");
+
+
+
+
+        const resultDiv = document.getElementById("result");
+        const resultDiv1 = document.getElementById("result1");
+        const resultDiv2 = document.getElementById("result2");
+        const resultDiv3 = document.getElementById("result3");
+        const resultDiv4 = document.getElementById("result4");
+        const resultDiv5 = document.getElementById("result5");
+        const resultDiv6 = document.getElementById("result6");
+        const resultDiv7 = document.getElementById("result7");
+        const resultDiv8 = document.getElementById("result8");
+        const resultDiv9 = document.getElementById("result9");
+        const resultDiv10 = document.getElementById("result10");
+        const resultDiv11 = document.getElementById("result11");
+        const resultDiv12 = document.getElementById("result12");
+        const resultDiv13 = document.getElementById("result13");
+        const resultDiv14 = document.getElementById("result14");
+        const resultDiv15 = document.getElementById("result15");
+        const resultDiv16 = document.getElementById("result16");
+        const resultDiv17 = document.getElementById("result17");
+        const resultDiv18 = document.getElementById("result18");
+        const resultDiv19 = document.getElementById("result19");
+        const resultDiv20 = document.getElementById("result20");
+        const resultDiv21 = document.getElementById("result21");
+        const resultDiv22 = document.getElementById("result22");
+        const resultDiv23 = document.getElementById("result23");
+        const resultDiv24 = document.getElementById("result24");
+        const resultDiv25 = document.getElementById("result25");
+        const resultDiv26 = document.getElementById("result26");
+        const resultDiv27 = document.getElementById("result27");
+        const resultDiv28 = document.getElementById("result28");
+        const resultDiv29 = document.getElementById("result29");
+        const resultDiv30 = document.getElementById("result30");
+        const resultDiv31 = document.getElementById("result31");
+        const resultDiv32 = document.getElementById("result32");
+        const resultDiv33 = document.getElementById("result33");
+        const resultDiv34 = document.getElementById("result34");
+        const resultDiv35 = document.getElementById("result35");
+        const resultDiv36 = document.getElementById("result36");
+        const resultDiv37 = document.getElementById("result37");
+        const resultDiv38 = document.getElementById("result38");
+        const resultDiv39 = document.getElementById("result39");
+        const resultDiv40 = document.getElementById("result40");
+        const resultDiv41 = document.getElementById("result41");
+        const resultDiv42 = document.getElementById("result42");
+        const resultDiv43 = document.getElementById("result43");
+        const resultDiv44 = document.getElementById("result44");
+
+
+
+        const firstInputs = [
+            document.getElementById("firstInput"),
+            document.getElementById("firstInput1"),
+            document.getElementById("firstInput2"),
+            document.getElementById("firstInput3"),
+            document.getElementById("firstInput4"),
+            document.getElementById("firstInput5"),
+            document.getElementById("firstInput6"),
+            document.getElementById("firstInput7"),
+            document.getElementById("firstInput8"),
+            document.getElementById("firstInput9"),
+            document.getElementById("firstInput10"),
+            document.getElementById("firstInput11"),
+            document.getElementById("firstInput12"),
+            document.getElementById("firstInput13"),
+            document.getElementById("firstInput14"),
+            document.getElementById("firstInput15"),
+            document.getElementById("firstInput16"),
+            document.getElementById("firstInput17"),
+            document.getElementById("firstInput18"),
+            document.getElementById("firstInput19"),
+            document.getElementById("firstInput20"),
+            document.getElementById("firstInput21"),
+            document.getElementById("firstInput22"),
+            document.getElementById("firstInput23"),
+            document.getElementById("firstInput24"),
+            document.getElementById("firstInput25"),
+            document.getElementById("firstInput26"),
+            document.getElementById("firstInput27"),
+            document.getElementById("firstInput28"),
+            document.getElementById("firstInput29"),
+            document.getElementById("firstInput30"),
+            document.getElementById("firstInput31"),
+            document.getElementById("firstInput32"),
+            document.getElementById("firstInput33"),
+            document.getElementById("firstInput34"),
+            document.getElementById("firstInput35"),
+            document.getElementById("firstInput36"),
+            document.getElementById("firstInput37"),
+            document.getElementById("firstInput38"),
+            document.getElementById("firstInput39"),
+            document.getElementById("firstInput40"),
+            document.getElementById("firstInput41"),
+            document.getElementById("firstInput42"),
+            document.getElementById("firstInput43"),
+            document.getElementById("firstInput44")
+
+
+        ];
+
+        const secondInputs = [
+            document.getElementById("secondInput"),
+            document.getElementById("secondInput1"),
+            document.getElementById("secondInput2"),
+            document.getElementById("secondInput3"),
+            document.getElementById("secondInput4"),
+            document.getElementById("secondInput5"),
+            document.getElementById("secondInput6"),
+            document.getElementById("secondInput7"),
+            document.getElementById("secondInput8"),
+            document.getElementById("secondInput9"),
+            document.getElementById("secondInput10"),
+            document.getElementById("secondInput11"),
+            document.getElementById("secondInput12"),
+            document.getElementById("secondInput13"),
+            document.getElementById("secondInput14"),
+            document.getElementById("secondInput15"),
+            document.getElementById("secondInput16"),
+            document.getElementById("secondInput17"),
+            document.getElementById("secondInput18"),
+            document.getElementById("secondInput19"),
+            document.getElementById("secondInput20"),
+            document.getElementById("secondInput21"),
+            document.getElementById("secondInput22"),
+            document.getElementById("secondInput23"),
+            document.getElementById("secondInput24"),
+            document.getElementById("secondInput25"),
+            document.getElementById("secondInput26"),
+            document.getElementById("secondInput27"),
+            document.getElementById("secondInput28"),
+            document.getElementById("secondInput29"),
+            document.getElementById("secondInput30"),
+            document.getElementById("secondInput31"),
+            document.getElementById("secondInput32"),
+            document.getElementById("secondInput33"),
+            document.getElementById("secondInput34"),
+            document.getElementById("secondInput35"),
+            document.getElementById("secondInput36"),
+            document.getElementById("secondInput37"),
+            document.getElementById("secondInput38"),
+            document.getElementById("secondInput39"),
+            document.getElementById("secondInput40"),
+            document.getElementById("secondInput41"),
+            document.getElementById("secondInput42"),
+            document.getElementById("secondInput43"),
+            document.getElementById("secondInput44")
+
+        ];
+
+        const sumTextView = document.getElementById("sumTextView");
+        const sumSecondInputTextView = document.getElementById("sumSecondInputTextView");
+
+
+
+
+        function compareValues() {
+            const value1 = parseFloat(firstInput.value) || 0;
+            const value2 = parseFloat(secondInput.value) || 0;
+            const value3 = parseFloat(firstInput1.value) || 0;
+            const value4 = parseFloat(secondInput1.value) || 0;
+            const value5 = parseFloat(firstInput2.value) || 0;
+            const value6 = parseFloat(secondInput2.value) || 0;
+            const value7 = parseFloat(firstInput3.value) || 0;
+            const value8 = parseFloat(secondInput3.value) || 0;
+            const value9 = parseFloat(firstInput4.value) || 0;
+            const value10 = parseFloat(secondInput4.value) || 0;
+            const value11 = parseFloat(firstInput5.value) || 0;
+            const value12 = parseFloat(secondInput5.value) || 0;
+            const value13 = parseFloat(firstInput6.value) || 0;
+            const value14 = parseFloat(secondInput6.value) || 0;
+            const value15 = parseFloat(firstInput7.value) || 0;
+            const value16 = parseFloat(secondInput7.value) || 0;
+            const value17 = parseFloat(firstInput8.value) || 0;
+            const value18 = parseFloat(secondInput8.value) || 0;
+            const value19 = parseFloat(firstInput9.value) || 0;
+            const value20 = parseFloat(secondInput9.value) || 0;
+            const value21 = parseFloat(firstInput10.value) || 0;
+            const value22 = parseFloat(secondInput10.value) || 0;
+            const value23 = parseFloat(firstInput11.value) || 0;
+            const value24 = parseFloat(secondInput11.value) || 0;
+            const value25 = parseFloat(firstInput12.value) || 0;
+            const value26 = parseFloat(secondInput12.value) || 0;
+            const value27 = parseFloat(firstInput13.value) || 0;
+            const value28 = parseFloat(secondInput13.value) || 0;
+            const value29 = parseFloat(firstInput14.value) || 0;
+            const value30 = parseFloat(secondInput14.value) || 0;
+            const value31 = parseFloat(firstInput15.value) || 0;
+            const value32 = parseFloat(secondInput15.value) || 0;
+            const value33 = parseFloat(firstInput16.value) || 0;
+            const value34 = parseFloat(secondInput16.value) || 0;
+            const value35 = parseFloat(firstInput17.value) || 0;
+            const value36 = parseFloat(secondInput17.value) || 0;
+            const value37 = parseFloat(firstInput18.value) || 0;
+            const value38 = parseFloat(secondInput18.value) || 0;
+            const value39 = parseFloat(firstInput19.value) || 0;
+            const value40 = parseFloat(secondInput19.value) || 0;
+            const value41 = parseFloat(firstInput20.value) || 0;
+            const value42 = parseFloat(secondInput20.value) || 0;
+            const value43 = parseFloat(firstInput21.value) || 0;
+            const value44 = parseFloat(secondInput21.value) || 0;
+            const value45 = parseFloat(firstInput22.value) || 0;
+            const value46 = parseFloat(secondInput22.value) || 0;
+            const value47 = parseFloat(firstInput23.value) || 0;
+            const value48 = parseFloat(secondInput23.value) || 0;
+            const value49 = parseFloat(firstInput24.value) || 0;
+            const value50 = parseFloat(secondInput24.value) || 0;
+            const value51 = parseFloat(firstInput25.value) || 0;
+            const value52 = parseFloat(secondInput25.value) || 0;
+            const value53 = parseFloat(firstInput26.value) || 0;
+            const value54 = parseFloat(secondInput26.value) || 0;
+            const value55 = parseFloat(firstInput27.value) || 0;
+            const value56 = parseFloat(secondInput27.value) || 0;
+            const value57 = parseFloat(firstInput28.value) || 0;
+            const value58 = parseFloat(secondInput28.value) || 0;
+            const value59 = parseFloat(firstInput29.value) || 0;
+            const value60 = parseFloat(secondInput29.value) || 0;
+            const value61 = parseFloat(firstInput30.value) || 0;
+            const value62 = parseFloat(secondInput30.value) || 0;
+            const value63 = parseFloat(firstInput31.value) || 0;
+            const value64 = parseFloat(secondInput31.value) || 0;
+            const value65 = parseFloat(firstInput32.value) || 0;
+            const value66 = parseFloat(secondInput32.value) || 0;
+            const value67 = parseFloat(firstInput33.value) || 0;
+            const value68 = parseFloat(secondInput33.value) || 0;
+            const value69 = parseFloat(firstInput34.value) || 0;
+            const value70 = parseFloat(secondInput34.value) || 0;
+            const value71 = parseFloat(firstInput35.value) || 0;
+            const value72 = parseFloat(secondInput35.value) || 0;
+            const value73 = parseFloat(firstInput36.value) || 0;
+            const value74 = parseFloat(secondInput36.value) || 0;
+            const value75 = parseFloat(firstInput37.value) || 0;
+            const value76 = parseFloat(secondInput37.value) || 0;
+            const value77 = parseFloat(firstInput38.value) || 0;
+            const value78 = parseFloat(secondInput38.value) || 0;
+            const value79 = parseFloat(firstInput39.value) || 0;
+            const value80 = parseFloat(secondInput39.value) || 0;
+            const value81 = parseFloat(firstInput40.value) || 0;
+            const value82 = parseFloat(secondInput40.value) || 0;
+            const value83 = parseFloat(firstInput41.value) || 0;
+            const value84 = parseFloat(secondInput41.value) || 0;
+            const value85 = parseFloat(firstInput42.value) || 0;
+            const value86 = parseFloat(secondInput42.value) || 0;
+            const value87 = parseFloat(firstInput43.value) || 0;
+            const value88 = parseFloat(secondInput43.value) || 0;
+            const value89 = parseFloat(firstInput44.value) || 0;
+            const value90 = parseFloat(secondInput44.value) || 0;
+
+
+
+
+
+            if (value2 <= value1) {
+                resultDiv.textContent = "O";
+                resultDiv.classList.remove("red");
+                resultDiv.classList.add("green");
+            } else {
+                resultDiv.textContent = "O";
+                resultDiv.classList.remove("green");
+                resultDiv.classList.add("red");
+            }
+            if (value4 <= value3) {
+                resultDiv1.textContent = "O";
+                resultDiv1.classList.remove("red");
+                resultDiv1.classList.add("green");
+            } else {
+                resultDiv1.textContent = "O";
+                resultDiv1.classList.remove("green");
+                resultDiv1.classList.add("red");
+            }
+            if (value6 <= value5) {
+                resultDiv2.textContent = "O";
+                resultDiv2.classList.remove("red");
+                resultDiv2.classList.add("green");
+            } else {
+                resultDiv2.textContent = "O";
+                resultDiv2.classList.remove("green");
+                resultDiv2.classList.add("red");
+            }
+            if (value8 <= value7) {
+                resultDiv3.textContent = "O";
+                resultDiv3.classList.remove("red");
+                resultDiv3.classList.add("green");
+            } else {
+                resultDiv3.textContent = "O";
+                resultDiv3.classList.remove("green");
+                resultDiv3.classList.add("red");
+            }
+            if (value10 <= value9) {
+                resultDiv4.textContent = "O";
+                resultDiv4.classList.remove("red");
+                resultDiv4.classList.add("green");
+            } else {
+                resultDiv4.textContent = "O";
+                resultDiv4.classList.remove("green");
+                resultDiv4.classList.add("red");
+            }
+            if (value12 <= value11) {
+                resultDiv5.textContent = "O";
+                resultDiv5.classList.remove("red");
+                resultDiv5.classList.add("green");
+            } else {
+                resultDiv5.textContent = "O";
+                resultDiv5.classList.remove("green");
+                resultDiv5.classList.add("red");
+            }
+            if (value14 <= value13) {
+                resultDiv6.textContent = "O";
+                resultDiv6.classList.remove("red");
+                resultDiv6.classList.add("green");
+            } else {
+                resultDiv6.textContent = "O";
+                resultDiv6.classList.remove("green");
+                resultDiv6.classList.add("red");
+            }
+            if (value16 <= value15) {
+                resultDiv7.textContent = "O";
+                resultDiv7.classList.remove("red");
+                resultDiv7.classList.add("green");
+            } else {
+                resultDiv7.textContent = "O";
+                resultDiv7.classList.remove("green");
+                resultDiv7.classList.add("red");
+            }
+            if (value18 <= value17) {
+                resultDiv8.textContent = "O";
+                resultDiv8.classList.remove("red");
+                resultDiv8.classList.add("green");
+            } else {
+                resultDiv8.textContent = "O";
+                resultDiv8.classList.remove("green");
+                resultDiv8.classList.add("red");
+            }
+            if (value20 <= value19) {
+                resultDiv9.textContent = "O";
+                resultDiv9.classList.remove("red");
+                resultDiv9.classList.add("green");
+            } else {
+                resultDiv9.textContent = "O";
+                resultDiv9.classList.remove("green");
+                resultDiv9.classList.add("red");
+            }
+            if (value22 <= value21) {
+                resultDiv10.textContent = "O";
+                resultDiv10.classList.remove("red");
+                resultDiv10.classList.add("green");
+            } else {
+                resultDiv10.textContent = "O";
+                resultDiv10.classList.remove("green");
+                resultDiv10.classList.add("red");
+            }
+            if (value24 <= value23) {
+                resultDiv11.textContent = "O";
+                resultDiv11.classList.remove("red");
+                resultDiv11.classList.add("green");
+            } else {
+                resultDiv11.textContent = "O";
+                resultDiv11.classList.remove("green");
+                resultDiv11.classList.add("red");
+            }
+            if (value26 <= value25) {
+                resultDiv12.textContent = "O";
+                resultDiv12.classList.remove("red");
+                resultDiv12.classList.add("green");
+            } else {
+                resultDiv12.textContent = "O";
+                resultDiv12.classList.remove("green");
+                resultDiv12.classList.add("red");
+            }
+            if (value28 <= value27) {
+                resultDiv13.textContent = "O";
+                resultDiv13.classList.remove("red");
+                resultDiv13.classList.add("green");
+            } else {
+                resultDiv13.textContent = "O";
+                resultDiv13.classList.remove("green");
+                resultDiv13.classList.add("red");
+            }
+            if (value30 <= value29) {
+                resultDiv14.textContent = "O";
+                resultDiv14.classList.remove("red");
+                resultDiv14.classList.add("green");
+            } else {
+                resultDiv14.textContent = "O";
+                resultDiv14.classList.remove("green");
+                resultDiv14.classList.add("red");
+            }
+            if (value32 <= value31) {
+                resultDiv15.textContent = "O";
+                resultDiv15.classList.remove("red");
+                resultDiv15.classList.add("green");
+            } else {
+                resultDiv15.textContent = "O";
+                resultDiv15.classList.remove("green");
+                resultDiv15.classList.add("red");
+            }
+            if (value34 <= value33) {
+                resultDiv16.textContent = "O";
+                resultDiv16.classList.remove("red");
+                resultDiv16.classList.add("green");
+            } else {
+                resultDiv16.textContent = "O";
+                resultDiv16.classList.remove("green");
+                resultDiv16.classList.add("red");
+            }
+            if (value36 <= value35) {
+                resultDiv17.textContent = "O";
+                resultDiv17.classList.remove("red");
+                resultDiv17.classList.add("green");
+            } else {
+                resultDiv17.textContent = "O";
+                resultDiv17.classList.remove("green");
+                resultDiv17.classList.add("red");
+            }
+            if (value38 <= value37) {
+                resultDiv18.textContent = "O";
+                resultDiv18.classList.remove("red");
+                resultDiv18.classList.add("green");
+            } else {
+                resultDiv18.textContent = "O";
+                resultDiv18.classList.remove("green");
+                resultDiv18.classList.add("red");
+            }
+            if (value40 <= value39) {
+                resultDiv19.textContent = "O";
+                resultDiv19.classList.remove("red");
+                resultDiv19.classList.add("green");
+            } else {
+                resultDiv19.textContent = "O";
+                resultDiv19.classList.remove("green");
+                resultDiv19.classList.add("red");
+            }
+            if (value42 <= value41) {
+                resultDiv20.textContent = "O";
+                resultDiv20.classList.remove("red");
+                resultDiv20.classList.add("green");
+            } else {
+                resultDiv20.textContent = "O";
+                resultDiv20.classList.remove("green");
+                resultDiv20.classList.add("red");
+            }
+            if (value44 <= value43) {
+                resultDiv21.textContent = "O";
+                resultDiv21.classList.remove("red");
+                resultDiv21.classList.add("green");
+            } else {
+                resultDiv21.textContent = "O";
+                resultDiv21.classList.remove("green");
+                resultDiv21.classList.add("red");
+            }
+            if (value46 <= value45) {
+                resultDiv22.textContent = "O";
+                resultDiv22.classList.remove("red");
+                resultDiv22.classList.add("green");
+            } else {
+                resultDiv22.textContent = "O";
+                resultDiv22.classList.remove("green");
+                resultDiv22.classList.add("red");
+            }
+            if (value48 <= value47) {
+                resultDiv23.textContent = "O";
+                resultDiv23.classList.remove("red");
+                resultDiv23.classList.add("green");
+            } else {
+                resultDiv23.textContent = "O";
+                resultDiv23.classList.remove("green");
+                resultDiv23.classList.add("red");
+            }
+            if (value50 <= value49) {
+                resultDiv24.textContent = "O";
+                resultDiv24.classList.remove("red");
+                resultDiv24.classList.add("green");
+            } else {
+                resultDiv24.textContent = "O";
+                resultDiv24.classList.remove("green");
+                resultDiv24.classList.add("red");
+            }
+            if (value52 <= value51) {
+                resultDiv25.textContent = "O";
+                resultDiv25.classList.remove("red");
+                resultDiv25.classList.add("green");
+            } else {
+                resultDiv25.textContent = "O";
+                resultDiv25.classList.remove("green");
+                resultDiv25.classList.add("red");
+            }
+            if (value54 <= value53) {
+                resultDiv26.textContent = "O";
+                resultDiv26.classList.remove("red");
+                resultDiv26.classList.add("green");
+            } else {
+                resultDiv26.textContent = "O";
+                resultDiv26.classList.remove("green");
+                resultDiv26.classList.add("red");
+            }
+            if (value56 <= value55) {
+                resultDiv27.textContent = "O";
+                resultDiv27.classList.remove("red");
+                resultDiv27.classList.add("green");
+            } else {
+                resultDiv27.textContent = "O";
+                resultDiv27.classList.remove("green");
+                resultDiv27.classList.add("red");
+            }
+            if (value58 <= value57) {
+                resultDiv28.textContent = "O";
+                resultDiv28.classList.remove("red");
+                resultDiv28.classList.add("green");
+            } else {
+                resultDiv28.textContent = "O";
+                resultDiv28.classList.remove("green");
+                resultDiv28.classList.add("red");
+            }
+            if (value60 <= value59) {
+                resultDiv29.textContent = "O";
+                resultDiv29.classList.remove("red");
+                resultDiv29.classList.add("green");
+            } else {
+                resultDiv29.textContent = "O";
+                resultDiv29.classList.remove("green");
+                resultDiv29.classList.add("red");
+            }
+            if (value62 <= value61) {
+                resultDiv30.textContent = "O";
+                resultDiv30.classList.remove("red");
+                resultDiv30.classList.add("green");
+            } else {
+                resultDiv30.textContent = "O";
+                resultDiv30.classList.remove("green");
+                resultDiv30.classList.add("red");
+            }
+            if (value64 <= value63) {
+                resultDiv31.textContent = "O";
+                resultDiv31.classList.remove("red");
+                resultDiv31.classList.add("green");
+            } else {
+                resultDiv31.textContent = "O";
+                resultDiv31.classList.remove("green");
+                resultDiv31.classList.add("red");
+            }
+            if (value66 <= value65) {
+                resultDiv32.textContent = "O";
+                resultDiv32.classList.remove("red");
+                resultDiv32.classList.add("green");
+            } else {
+                resultDiv32.textContent = "O";
+                resultDiv32.classList.remove("green");
+                resultDiv32.classList.add("red");
+            }
+            if (value68 <= value67) {
+                resultDiv33.textContent = "O";
+                resultDiv33.classList.remove("red");
+                resultDiv33.classList.add("green");
+            } else {
+                resultDiv33.textContent = "O";
+                resultDiv33.classList.remove("green");
+                resultDiv33.classList.add("red");
+            } if (value70 <= value69) {
+                resultDiv34.textContent = "O";
+                resultDiv34.classList.remove("red");
+                resultDiv34.classList.add("green");
+            } else {
+                resultDiv34.textContent = "O";
+                resultDiv34.classList.remove("green");
+                resultDiv34.classList.add("red");
+            }
+            if (value72 <= value71) {
+                resultDiv35.textContent = "O";
+                resultDiv35.classList.remove("red");
+                resultDiv35.classList.add("green");
+            } else {
+                resultDiv35.textContent = "O";
+                resultDiv35.classList.remove("green");
+                resultDiv35.classList.add("red");
+            }
+            if (value74 <= value73) {
+                resultDiv36.textContent = "O";
+                resultDiv36.classList.remove("red");
+                resultDiv36.classList.add("green");
+            } else {
+                resultDiv36.textContent = "O";
+                resultDiv36.classList.remove("green");
+                resultDiv36.classList.add("red");
+            }
+            if (value76 <= value75) {
+                resultDiv37.textContent = "O";
+                resultDiv37.classList.remove("red");
+                resultDiv37.classList.add("green");
+            } else {
+                resultDiv37.textContent = "O";
+                resultDiv37.classList.remove("green");
+                resultDiv37.classList.add("red");
+            }
+            if (value78 <= value77) {
+                resultDiv38.textContent = "O";
+                resultDiv38.classList.remove("red");
+                resultDiv38.classList.add("green");
+            } else {
+                resultDiv38.textContent = "O";
+                resultDiv38.classList.remove("green");
+                resultDiv38.classList.add("red");
+            }
+            if (value80 <= value79) {
+                resultDiv39.textContent = "O";
+                resultDiv39.classList.remove("red");
+                resultDiv39.classList.add("green");
+            } else {
+                resultDiv39.textContent = "O";
+                resultDiv39.classList.remove("green");
+                resultDiv39.classList.add("red");
+            }
+            if (value82 <= value81) {
+                resultDiv40.textContent = "O";
+                resultDiv40.classList.remove("red");
+                resultDiv40.classList.add("green");
+            } else {
+                resultDiv40.textContent = "O";
+                resultDiv40.classList.remove("green");
+                resultDiv40.classList.add("red");
+            }
+            if (value84 <= value83) {
+                resultDiv41.textContent = "O";
+                resultDiv41.classList.remove("red");
+                resultDiv41.classList.add("green");
+            } else {
+                resultDiv41.textContent = "O";
+                resultDiv41.classList.remove("green");
+                resultDiv41.classList.add("red");
+            }
+            if (value86 <= value85) {
+                resultDiv42.textContent = "O";
+                resultDiv42.classList.remove("red");
+                resultDiv42.classList.add("green");
+            } else {
+                resultDiv42.textContent = "O";
+                resultDiv42.classList.remove("green");
+                resultDiv42.classList.add("red");
+            }
+            if (value88 <= value87) {
+                resultDiv43.textContent = "O";
+                resultDiv43.classList.remove("red");
+                resultDiv43.classList.add("green");
+            } else {
+                resultDiv43.textContent = "O";
+                resultDiv43.classList.remove("green");
+                resultDiv43.classList.add("red");
+            }
+            if (value90 <= value89) {
+                resultDiv44.textContent = "O";
+                resultDiv44.classList.remove("red");
+                resultDiv44.classList.add("green");
+            } else {
+                resultDiv44.textContent = "O";
+                resultDiv44.classList.remove("green");
+                resultDiv44.classList.add("red");
+            }
+            
+
+        }
+
+        valueInput.addEventListener("input", compareValueWithSum);
+
+        firstInput.addEventListener("input", compareValues);
+        secondInput.addEventListener("input", compareValues);
+        firstInput1.addEventListener("input", compareValues);
+        secondInput1.addEventListener("input", compareValues);
+        firstInput2.addEventListener("input", compareValues);
+        secondInput2.addEventListener("input", compareValues);
+        firstInput3.addEventListener("input", compareValues);
+        secondInput3.addEventListener("input", compareValues);
+        firstInput4.addEventListener("input", compareValues);
+        secondInput4.addEventListener("input", compareValues);
+        firstInput5.addEventListener("input", compareValues);
+        secondInput5.addEventListener("input", compareValues);
+        firstInput6.addEventListener("input", compareValues);
+        secondInput6.addEventListener("input", compareValues);
+        firstInput7.addEventListener("input", compareValues);
+        secondInput7.addEventListener("input", compareValues);
+        firstInput8.addEventListener("input", compareValues);
+        secondInput8.addEventListener("input", compareValues);
+        firstInput9.addEventListener("input", compareValues);
+        secondInput9.addEventListener("input", compareValues);
+        firstInput10.addEventListener("input", compareValues);
+        secondInput10.addEventListener("input", compareValues);
+        firstInput11.addEventListener("input", compareValues);
+        secondInput11.addEventListener("input", compareValues);
+        firstInput12.addEventListener("input", compareValues);
+        secondInput12.addEventListener("input", compareValues);
+        firstInput13.addEventListener("input", compareValues);
+        secondInput13.addEventListener("input", compareValues);
+        firstInput14.addEventListener("input", compareValues);
+        secondInput14.addEventListener("input", compareValues);
+        firstInput15.addEventListener("input", compareValues);
+        secondInput15.addEventListener("input", compareValues);
+        firstInput16.addEventListener("input", compareValues);
+        secondInput16.addEventListener("input", compareValues);
+        firstInput17.addEventListener("input", compareValues);
+        secondInput17.addEventListener("input", compareValues);
+        firstInput18.addEventListener("input", compareValues);
+        secondInput18.addEventListener("input", compareValues);
+        firstInput19.addEventListener("input", compareValues);
+        secondInput19.addEventListener("input", compareValues);
+        firstInput20.addEventListener("input", compareValues);
+        secondInput20.addEventListener("input", compareValues);
+        firstInput21.addEventListener("input", compareValues);
+        secondInput21.addEventListener("input", compareValues);
+        firstInput22.addEventListener("input", compareValues);
+        secondInput22.addEventListener("input", compareValues);
+        firstInput23.addEventListener("input", compareValues);
+        secondInput23.addEventListener("input", compareValues);
+        firstInput24.addEventListener("input", compareValues);
+        secondInput24.addEventListener("input", compareValues);
+        firstInput25.addEventListener("input", compareValues);
+        secondInput25.addEventListener("input", compareValues);
+        firstInput26.addEventListener("input", compareValues);
+        secondInput26.addEventListener("input", compareValues);
+        firstInput27.addEventListener("input", compareValues);
+        secondInput27.addEventListener("input", compareValues);
+        firstInput28.addEventListener("input", compareValues);
+        secondInput28.addEventListener("input", compareValues);
+        firstInput29.addEventListener("input", compareValues);
+        secondInput29.addEventListener("input", compareValues);
+        firstInput30.addEventListener("input", compareValues);
+        secondInput30.addEventListener("input", compareValues);
+        firstInput31.addEventListener("input", compareValues);
+        secondInput31.addEventListener("input", compareValues);
+        firstInput32.addEventListener("input", compareValues);
+        secondInput32.addEventListener("input", compareValues);
+        firstInput33.addEventListener("input", compareValues);
+        secondInput33.addEventListener("input", compareValues);
+        firstInput34.addEventListener("input", compareValues);
+        secondInput34.addEventListener("input", compareValues);
+        firstInput35.addEventListener("input", compareValues);
+        secondInput35.addEventListener("input", compareValues);
+        firstInput36.addEventListener("input", compareValues);
+        secondInput36.addEventListener("input", compareValues);
+        firstInput37.addEventListener("input", compareValues);
+        secondInput37.addEventListener("input", compareValues);
+        firstInput38.addEventListener("input", compareValues);
+        secondInput38.addEventListener("input", compareValues);
+        firstInput39.addEventListener("input", compareValues);
+        secondInput39.addEventListener("input", compareValues);
+        firstInput40.addEventListener("input", compareValues);
+        secondInput40.addEventListener("input", compareValues);
+        firstInput41.addEventListener("input", compareValues);
+        secondInput41.addEventListener("input", compareValues);
+        firstInput42.addEventListener("input", compareValues);
+        secondInput42.addEventListener("input", compareValues);
+        firstInput43.addEventListener("input", compareValues);
+        secondInput43.addEventListener("input", compareValues);
+        firstInput44.addEventListener("input", compareValues);
+        secondInput44.addEventListener("input", compareValues);
+        
+
+
+        function updateSum() {
+            let sum = 0;
+            for (const input of firstInputs) {
+                sum += parseFloat(input.value) || 0;
+            }
+            sumTextView.textContent = sum;
+        }
+
+        function updateSumSecondInput() {
+            let sum = 0;
+            for (const input of secondInputs) {
+                sum += parseFloat(input.value) || 0;
+            }
+            sumSecondInputTextView.textContent = sum;
+
+            if (sum > parseFloat(sumTextView.textContent)) {
+            sumSecondInputTextView.classList.add("red");
+        } else {
+            sumSecondInputTextView.classList.remove("red");
+        }
+        }
+
+        for (const input of firstInputs) {
+            input.addEventListener("input", updateSum);
+        }
+
+        for (const input of secondInputs) {
+            input.addEventListener("input", updateSumSecondInput);
+        }
+
+        function compareValueWithSum() {
+    const value = parseFloat(valueInput.value) || 0;
+    const sumOfSecondValues = parseFloat(sumSecondInputTextView.textContent) || 0;
+
+    if (value <= sumOfSecondValues) {
+        valueResult.textContent = "You are over the limit.";
+        valueResult.classList.remove("green");
+        valueResult.classList.add("red");
+    } else {
+        valueResult.textContent = "You are still in the clear.";
+        valueResult.classList.remove("red");
+        valueResult.classList.add("green");
+    }
+}
+
+       
+
+
+        // Initial comparison
+        compareValues();
+        updateSum();
+        updateSumSecondInput();
+        
+    </script>
+        </script>
+        <div class="bottom-space"></div>
+        <footer>
+            <p>&#169 2023 Finessed Webs Website Design &#183 Tel: +27 67 112 2347 &#183 View our Social Media and don&#8217t forget to follow and like.
+            </p>
+            <p>Designed by FinessedWebs</p>
+          </footer>
+    </body>
+</html>
